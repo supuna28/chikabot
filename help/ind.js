@@ -1,47 +1,47 @@
 exports.wait = () => {
-    return `⏳ Mohon tunggu sebentar~`
+    return `⏳ ඩවුන්ලෝඩ් කරමින් පවතී`
 }
 
 exports.ok = () => {
-    return `✅ Done. Ok desu~`
+    return `✅ සාර්ථකය~`
 }
 
 exports.err = () => {
-    return `‼️Fitur Sedang Error‼️
+    return `‼️දෝශයකි‼️
 
-⏳Sedang melapor bug fitur ke owner-sama⏳`
+⏳හිමිකරු වෙත විශේෂාංග දෝෂයක් වාර්තා කිරීම⏳`
 }
 
 exports.wrongFormat = (prefix) => {
-    return `Format salah ‼️ Silakan cek cara penggunaan di *${prefix}allmenu*.`
+    return `විධානය සොයා ගත නොහැක ‼️ මෙනුව සදහා= *${prefix}allmenu*.`
 }
 
 exports.emptyMess = () => {
-    return `⚠️ Harap masukkan pesan yang ingin disampaikan! ⚠️`
+    return `⚠️ වචන ඇතුලත් කරන්න⚠️`
 }
 
 exports.cmdNotFound = (cmd, prefix) => {
-    return `❎ Command *${cmd}* tidak terdaftar di *${prefix}allmenu* ❎`
+    return `❎ විධානය සොයාගත නොහැක *${cmd}* මෙනුව සදහා *${prefix}allmenu* සෙන්ඩ් කරන්න`
 }
 
 exports.ownerOnly = () => {
-    return `⚠️ Command ini khusus Owner-sama! ⚠️`
+    return `⚠️ අයිතිකරුට පමනි ⚠️`
 }
 
 exports.doneOwner = () => {
-    return `✔  ️Sudah selesai, Owner-sama~`
+    return `✔  ️සාර්තකයි අයිතිකරුනි`
 }
 
 exports.groupOnly = () => {
-    return `👥  Command ini hanya bisa digunakan di dalam grup!`
+    return `👥  සමූහ සදහා පමනක් වන විධානයකි!`
 }
 
 exports.adminOnly = () => {
-    return `🙅  Command ini hanya bisa digunakan oleh admin grup!`
+    return `🙅  සමූහ ඇඩ්මින් සදහා පමනක් වන විධානයකි!`
 }
 
 exports.nhFalse = () => {
-    return `Kode tidak valid!`
+    return `වලංගු නොවේ!`
 }
 
 exports.listBlock = (blockNumber) => {
@@ -51,25 +51,25 @@ Total diblokir: *${blockNumber.length}* user\n`
 }
 
 exports.notAdmin = () => {
-    return `❎ User bukan seorang admin! ❎`
+    return `❎ ඔබ ඇඩ්මින් වරයකු නොවේ! ❎`
 }
 
 exports.adminAlready = () => {
-    return `⚠️ Tidak  dapat mem-promote user yang merupakan admin! ⚠️`
+    return `⚠️ මොහු පෙර සිට ඇඩ්මින් වරයෙකි! ⚠️`
 }
 
 exports.botNotAdmin = () => {
-    return `Jadikan bot sebagai admin terlebih dahulu! 🙏`
+    return `බොට් ඇඩ්මින් වරයකු නොවේ! 🙏`
 }
 
 exports.received = (pushname) => {
     return `
 Halo ${pushname}!
-Terima kasih telah melapor, laporanmu akan kami segera terima.`
+වාර්තා කිරීම ගැන ඔබට ස්තුතියි, ඔබගේ වාර්තාව අපට ඉක්මනින් ලැබෙනු ඇත.`
 }
 
 exports.videoLimit = () => {
-    return `Ukuran file terlalu besar!`
+    return `ප්‍රමානය ඉහල වේ!`
 }
 
 exports.notNum = (q) => {
@@ -80,7 +80,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
     return `
 *Selamat ${salam} ${pushname} 😖*
 *⌚Time Server : ${time}*
-*📚 List-Menu Chika Beta :*
+*📚 BOTKINGDOM Beta :*
 
 🤖 *INFO*
 ├ ${prefix}owner
@@ -133,9 +133,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 └──────
 
 🙏 *THANKS*
-├ Xfarr api
-├ Baileys#multi-device
-├ and all support
+├ https://chat.whatsapp.com/CIDWlH7yzEsKombRDcTKcV
 └──────
 
     `
@@ -143,39 +141,17 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 
 exports.rules = (prefix) => {
     return `
-*── 「 RULES AND FAQ 」 ──*
+*── 「 නීති」 ──*
 
-1. Jangan spam bot. 🙅
-Sanksi: *⚠️ WARN/SOFT BLOCK*
+1. don't spam bot. 🙅
+😒: *⚠️ WARN/SOFT BLOCK*
 
-2. Jangan telepon bot. ☎️
-Sanksi: *❎ SOFT BLOCK*
+2. don't call bot. ☎️
+😒: *❎ SOFT BLOCK*
+සමූහ සදහා ඇඩ් කිරීමට අවශ්‍යය නම් ඔව්නර් වෙත දැනුම් දෙන්න
+.owner යොදා ගන්න
 
-3. Jangan mengeksploitasi bot.😖
-Sanksi: *‼️ PERMANENT BLOCK ‼️*
-
-🗯️ Bot tidak atau lambat merespon ?
-➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan. Tetap patuhi rules‼️
-
-🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
-➡️ Script ini masih private dan tidak pernah diperjual belikan ,bijaklah dalam mengetahui penipu.
-
-🗯️ Boleh saya menambah ke grup?
-➡️ Untuk sementara bot dalam status free to add.
-
-🗯️ Prefixnya apa ya?
-➡️ Bot ini menggunakan multi prefix. Berarti anda bisa menggunakan prefix #, . , Dan prefix wajar lainnya.
-
-🗯️ Kak, kok syaa chat owner tidak direspon?
-➡️ Owner hanya merespon pertanyaan seputar bot Dan kendala eror, tidak untuk kenalan ataupun mengemis script.
-
-
-Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
-
-⚠️ Segala kebijakan dan ketentuan ChikaBot di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
-
-Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan chika-bot
-😖🙏
+🙏
 
 
     `
