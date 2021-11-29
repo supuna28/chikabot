@@ -176,9 +176,9 @@ module.exports = async(chika, msg, m, ind, setting) => {
                         {buttonId: `${prefix}allmenu`, buttonText: {displayText: '🔍 List Menu'}, type: 1},
                         {buttonId: `${prefix}rule`, buttonText: {displayText: '🎛️ Rules Bot' }, type: 1}
                     ]
-                    sendButton('location', from, `Hai kak ${pushname} 👋, saya *${botName}*\n\nBot ini adalah Beta *Multi-Device* Whatsapp. Jika kamu menemukan semacam bug atau kesalahan mohon dimaklumi dulu ya 😖, Lapor Owner Jika Perlu atau Mendesak 🙏`, buttons)
+                    sendButton('location', from, `Hai kak ${pushname} 👋, saya *${botName}*\n\nBot ඔබ යම් ආකාරයක දෝෂයක් හෝ දෝෂයක් සොයා ගන්නේ නම්, කරුණාකර පළමුව තේරුම් ගන්න, කරුණාකර අවශ්‍ය හෝ හදිසි නම් හිමිකරු වාර්තා කරන්න🙏`, buttons)
                } else {
-                   textImg(`Hai kak ${pushname} 👋, saya *${botName}*\n\nBot ini adalah Beta *Multi-Device* Whatsapp. \nJika kamu menemukan semacam bug atau kesalahan mohon dimaklumi dulu ya 😖, Lapor Owner Jika Perlu atau Mendesak 🙏\n\nKetik *${prefix}allmenu* untuk melihat list fitur bot`)
+                   textImg(`Hai kak ${pushname} 👋, saya *${botName}*\n\nBot ini adalah Beta *Multi-Device* Whatsapp. \nJඔබ යම් ආකාරයක දෝෂයක් හෝ දෝෂයක් සොයා ගන්නේ නම්, කරුණාකර පළමුව තේරුම් ගන්න, කරුණාකර අවශ්‍ය හෝ හදිසි නම් හිමිකරු වාර්තා කරන්න 🙏\n\nKetik *${prefix}allmenu* untuk melihat list fitur bot`)
                 }
             }
             break
@@ -527,7 +527,7 @@ module.exports = async(chika, msg, m, ind, setting) => {
                     txt += `*🎞️ Type :* ${data.medias[1].extension}\n`
                     txt += `*💾 Size :* ${data.medias[1].formattedSize}\n`
                     txt += `*📚 Url Source :* ${data.url}\n\n`
-                    txt += `*Mohon tunggu sebentar kak, sedang proses pengiriman...*`
+                    txt += `*රැදී සිටින්න වීඩියෝව නොලැබුනි නම් නැවත උත්සහ කරන්න..*`
                     sendFileFromUrl(from, data.thumbnail, txt, msg)
                     sendFileFromUrl(from, data.medias[1].url, '', msg)
                     
@@ -550,7 +550,7 @@ module.exports = async(chika, msg, m, ind, setting) => {
                     txt += `*🎞️ Type :* ${data.medias[7].extension}\n`
                     txt += `*💾 Size :* ${data.medias[7].formattedSize}\n`
                     txt += `*📚 Url Source :* ${data.url}\n\n`
-                    txt += `*Mohon tunggu sebentar kak, sedang proses pengiriman...*`
+                    txt += `*රැදී සිටින්න ඕඩියෝව නොලැබුනි නම් නැවත උත්සහ කරන්න..*`
                     sendFileFromUrl(from, data.thumbnail, txt, msg)
                     sendFileFromUrl(from, data.medias[7].url, '', msg)
                 })
